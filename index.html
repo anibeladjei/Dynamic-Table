@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+
+    <h1>Dynamic Table</h1>
+    <button onclick="addColumn()"><i class='bx bx-plus'></i>Add Column</button>
+    <button onclick="addRow()"><i class='bx bx-plus'></i>Add Row</button>
+    <button onclick="deleteColumn()"><i class='bx bx-trash'></i>Delete Last Column</button>
+    <button onclick="deleteRow()"><i class='bx bx-trash'></i>Delete Last Row</button>
+
+    <div class="tabl">
+        <table id="dynamicTable">
+            <thead>
+                <tr id="tableHead">
+                    <th title="Double Click to Edit" ondblclick="renameHeader(this)">Column 1</th>
+                    <th title="Double Click to Edit" ondblclick="renameHeader(this)">Column 2</th>
+    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">Row 1 Col 1</td>
+                    <td contenteditable="true">Row 2 Col 2</td>
+    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <section class="desc">
+        <h2>Customer Data Management Table</h2>
+        <p>This table allows users to easily store and manage customer information 
+            by dynamically adding rows. Fields like customer name, phone number, 
+            location, email address, order ID, and other relevant details can be entered
+             and customized as needed. The table adapts to any type of customer data, giving 
+             users the flexibility to expand it with new fields when necessary. Any business or adult visiting the 
+            site can use this tool to manage their customer information.</p>
+
+            <h2>Use Case:</h2>
+            <p>Imagine a small business that wants to keep track of its customer 
+                details. The business owner can create a table with fields like 
+                customer name, phone number, location, and order ID. As customers 
+                place new orders, the owner can add a new row with their details 
+                and continue expanding the table with more fields like “customer 
+                notes” or “last contacted” as needed.</p>
+
+            <h2>Practice with these Features:</h2>
+            <p>Users can practice with the following fields</p>
+            <ul>
+                <li>Customer Name</li>
+                <li>Phone Number</li>
+                <li>Location</li>
+                <li>Email Address</li>
+                <li>Order ID</li>
+                <li>Date of Order</li>
+                <li>Customer Notes</li>
+                <li>Last Contacted</li>
+            </ul>
+            <p>You can try adding new rows, customizing these fields, 
+                and exploring how to manage your data.</p>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+<footer>2025 &copy; All right reserved | &blank; <a href="https://anibel-adjei.belswebdev.com/">Anibel Adjei</a></footer>
+</html>
